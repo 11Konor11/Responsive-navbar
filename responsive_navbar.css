@@ -1,0 +1,57 @@
+body{
+	background: lightblue;
+}
+
+nav{
+	width: 100%;
+	background: orange;
+	display: flex;
+	align-items: center;
+}
+
+ul{
+	display: flex;
+	list-style-type: none;
+	opacity: 0;
+}
+
+li{
+	margin: 0px 0px 0px 2vw;
+}
+
+.li-item{
+	overflow: hidden;	
+}
+
+li:hover{
+	background: yellow;
+	opacity: 1;
+	transition: background 600ms, opacity 600ms;
+}
+
+@keyframes appearance{
+	from {opacity:0;}
+	to {opacity: 0.6;}
+}
+
+@keyframes disappearance{
+	from {opacity:0.6;}
+	to {opacity: 0;}
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+button{
+	padding: 2vw 3vw;
+	border: none;
+
+}
+
+button:hover{
+	background: yellow;
+	border: 2px solid white;
+	transition: background 600ms, border 600ms;
+}
